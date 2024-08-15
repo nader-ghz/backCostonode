@@ -64,7 +64,7 @@ app.use(express.static("public"));
 app.use("/uploads", express.static("uploads"));
 
 
-app.listen( 5001, ()=> {
+app.listen( 8000, ()=> {
     console.log('Server up and running...');
 });
 module.exports = app;
