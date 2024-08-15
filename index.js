@@ -40,7 +40,7 @@ const store = new sessionStore({
 })();
 
 app.use(session({
-    secret: process.env.SESS_SECRET,
+    secret: "2759fkn3knvkebvuebfkgh3ubevgo34yginreihg83rgbv",
     resave: false,
     saveUninitialized: true,
     store: store,
@@ -64,6 +64,7 @@ app.use(express.static("public"));
 app.use("/uploads", express.static("uploads"));
 
 
-app.listen(process.env.APP_PORT, ()=> {
+app.listen( 5001, ()=> {
     console.log('Server up and running...');
 });
+module.exports = app;
