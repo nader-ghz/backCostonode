@@ -57,6 +57,9 @@ app.use(express.json());
 app.use(UserRoute);
 
 app.use(AuthRoute);
+app.get('/', (req, res) => {
+    res.send('Hello World')
+  })
 app.use('/api', productRouter);
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')));//store.sync();
 
