@@ -54,17 +54,17 @@ app.use(cors({
     origin: 'http://localhost:3000' 
 }));
 app.use(express.json());
-app.use(UserRoute);
+// app.use(UserRoute);
 
-app.use(AuthRoute);
+// app.use(AuthRoute);
 app.get('/', (req, res) => {
     res.send('Hello World')
   })
-app.use('/api', productRouter);
-app.use('/uploads', express.static(path.join(__dirname, 'uploads')));//store.sync();
+// app.use('/api', productRouter);
+// app.use('/uploads', express.static(path.join(__dirname, 'uploads')));//store.sync();
 
-app.use(express.static("public"));
-app.use("/uploads", express.static("uploads"));
+// app.use(express.static("public"));
+// app.use("/uploads", express.static("uploads"));
 
 
 app.listen( 8000, ()=> {
