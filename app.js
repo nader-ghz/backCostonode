@@ -27,17 +27,17 @@ const store = new sessionStore({
 //  (async()=>{
 //     await db.sync();
 //  })(); //pour generer auto DB
-(async () => {
-    try {
-        await db.authenticate();
-        console.log('Connection has been established successfully.');
+// (async () => {
+//     try {
+//         await db.authenticate();
+//         console.log('Connection has been established successfully.');
 
-        await db.sync({ alter: true });
-        console.log('All models were synchronized successfully.');
-    } catch (error) {
-        console.error('Unable to connect to the database:', error);
-    }
-})();
+//         await db.sync({ alter: true });
+//         console.log('All models were synchronized successfully.');
+//     } catch (error) {
+//         console.error('Unable to connect to the database:', error);
+//     }
+// })();
 
 app.use(session({
     secret: "2759fkn3knvkebvuebfkgh3ubevgo34yginreihg83rgbv",
